@@ -1,0 +1,12 @@
+.header-div-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-left img,
+.logo-right img {
+    height: 110px;
+    width: auto;
+    cursor: pointer;
+}

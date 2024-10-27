@@ -1,0 +1,16 @@
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-logo img{
+    height: 110px;
+    width: auto;
+}
+.right-logo img {
+    height: 30px;
+    margin: 0px 10px;
+    width: auto;
+    cursor: pointer;
+}
