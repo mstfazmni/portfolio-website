@@ -1,5 +1,5 @@
 import React from "react";
-import myLogo from '../assest/mz (1).png';
+import myLogo from '../assest/mz-f-w.png';
 import gitLogo from '../assest/GitHub_Logo.png';
 import linkedinLogo from '../assest/LI-Logo.png';
 import '../styles/Footer.css';

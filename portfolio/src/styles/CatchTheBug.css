@@ -1,30 +1,28 @@
 /* src/styles/CatchTheBug.css */
 
 /* if you wanna use gradient instead of changing color */
-/* .game-container {
+.game-container {
     position: relative;
-    width: 100%;
+    /* width: 100%; */
     height: 400px; 
-    background: linear-gradient(135deg, #74ebd5, #9face6); 
-    border: 2px solid #ccc;
-    border-radius: 10px;
+    background: linear-gradient(135deg, #046452, #1cdebb); 
     overflow: hidden; 
     display: flex;
     flex-direction: column;
     align-items: center; 
     justify-content: center; 
     padding: 20px; 
-} */
-@keyframes backgroundAnimation {
-    0% { background-color: #807e7e; }  /* Light gray */
-    50% { background-color: #c4c0c0; } /* Medium light gray */
-    100% { background-color: #a0a0a0; } /* Light gray */
 }
+/* @keyframes backgroundAnimation {
+    0% { background-color: #04c441; }
+    50% { background-color: #04b755; }
+    100% { background-color: #03741a; } 
+} */
 
 .game-container {
     position: relative;
     /* width: 100%; */
-    height: 60vh;
+    height: 100vh;
     animation: backgroundAnimation 10s ease-in-out infinite; 
     overflow: hidden;
     display: flex;
