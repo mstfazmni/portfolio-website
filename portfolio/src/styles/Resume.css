@@ -1,0 +1,103 @@
+/* General layout for the container */
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+    height: 100vh;
+    background: linear-gradient(135deg, #74c5eb, #8fa0ec); 
+}
+
+/* Left Section Styling */
+.left-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    text-align: center;
+    transform: translateY(2px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.left-sec:hover {
+    transform: translateY(-10px); 
+}
+
+.intro-p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Right Section Styling */
+.right-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    text-align: center;
+    transform: translateY(2px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.right-sec:hover {
+    transform: translateY(-10px); 
+}
+
+/* Button Styling */
+.download-pdf {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.download-pdf:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); 
+}
+
+.download-pdf:active {
+    transform: scale(0.98);
+}
+
+/* For embedded PDF */
+embed {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-sec, .right-sec {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .download-pdf {
+        width: 100%;
+    }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import '../styles/Header.css'
-import myLogo from '../assest/mz-f-b.png';
-import mailLogo from '../assest/Contact-me.png';
+import myLogo from '../asset/mz-f-b.png';
+import mailLogo from '../asset/Contact-me.png';
 const Header = () => {
     return(
         <div className="header-div-container">

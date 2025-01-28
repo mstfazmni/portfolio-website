@@ -1,7 +1,7 @@
 import React from "react";
-import myLogo from '../assest/mz-f-w.png';
-import gitLogo from '../assest/GitHub_Logo.png';
-import linkedinLogo from '../assest/LI-Logo.png';
+import myLogo from '../asset/mz-f-w.png';
+import gitLogo from '../asset/GitHub_Logo.png';
+import linkedinLogo from '../asset/LI-Logo.png';
 import '../styles/Footer.css';
 
 const Footer = () => {

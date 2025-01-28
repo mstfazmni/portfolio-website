@@ -6,6 +6,7 @@ import About from './components/About';
 import CatchTheBug from './components/CatchTheBug';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
+import Resume from './components/Resume';
 
 
 
@@ -27,6 +28,10 @@ function App() {
       {/* Projects component */}
       <section id="projects">
         <Projects/>
+      </section>
+      {/* Resume component */}
+      <section id="resume">
+        <Resume/>
       </section>
       {/* Footer component */}
       <section id="footer">
