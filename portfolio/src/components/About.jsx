@@ -91,9 +91,9 @@ const About = () => {
     return (
         <div className="about-div-container">
             <div id="container3D" className="container-3D"></div>
-            <h1 className="h1-about">Mostafa Zamani – Web Developer</h1>
+            <h1 className="h1-about">Mostafa Zamani – Software Developer</h1>
             <p className="p-about">
-                Hey there! I’m Mostafa, a web developer who turns code into captivating user experiences (with just a dash of magic).
+                Hey there! I’m Mostafa, a software developer who turns code into captivating user experiences (with just a dash of magic).
                 Whether it’s crafting pixel-perfect designs or building seamless back-end solutions,
                 I bring a passion for clean, responsive, and engaging websites.
                 I’m here to tackle challenges, make the web a better place,

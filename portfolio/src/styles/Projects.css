@@ -1,40 +1,74 @@
-@keyframes moveLeft{
-    0% {
-        transform: translateX(0);
-    }
-    50%{
-        transform: translateX(-10%);
-    }
-    
-}
-.card{
-    height: 250px;
-    width: 400px;
-    background-color: #282c34; 
-    margin: 20px 20px;
-    border-radius: 7px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
-    transition: all 0.3s ease;
-    cursor: pointer;
-    animation: moveLeft 10s linear infinite;
-}
-
-.card:hover{
-    height: 255px;
-    width: 405px;
-    background-color: #3b4048; 
-    transform: translateY(-5px); 
-
-}
-
-.projects-cards-container{
+/* Container holding the cards */
+.projects-cards-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    /* width: 100%; */
-    background-color: rgba(255, 255, 255, 0.7); 
-    padding: 20px;
-    overflow: hidden;
-    border-bottom: 1px solid rgb(220, 218, 218);
+    min-height: 100vh;
+    background-color: rgba(250, 250, 250, 0.9); 
 }
+
+/* Grid wrapper */
+.cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal-sized columns */
+    gap: 10px; 
+    width: 100vw; 
+    max-width: 1600px;
+    padding: 20px;
+}
+
+/* Styling for each card */
+.card-image {
+    
+    background-color: #bdcdec;
+    width: 100%; 
+    height: 500px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 10px; */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.card-image:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* responsive: Stack in one column on smaller screens */
+@media (max-width: 900px) {
+    .cards-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+.card{
+    position: relative;
+}
+.webLink {
+    position: absolute; 
+    top: 30%; 
+    left: 20%;
+    transform: translate(-50%, -50%); 
+    z-index: 10; 
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    background-color: rgba(0, 67, 129, 0.644);
+    padding: 15px 15px;
+    border-radius: 60px;
+    transition: background-color 0.3s;
+}
+.webLink:hover {
+text-decoration: underline;}
+
+/* Responsive design for smaller screens */
+/* @media (max-width: 768px) {
+    .cards-wrapper {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+} */
