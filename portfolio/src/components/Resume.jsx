@@ -10,19 +10,19 @@ const Resume = () => {
         link.click();
     };
 
-    return(
+    return (
         <div className="container">
-            {/* left section */}
+            {/* Left Section */}
             <section className="left-sec">
+                <h2>Resume & Career Highlights</h2>
                 <p className="intro-p">
-                    Proficient full stack and windows developer with hands-on experience building dynamic,
-                    responsive web applications using React, Node.js, and MongoDB.
-                    I am skilled in crafting user-centric interfaces and maintaining scalable backend services.
-                    Dedicated to learning emerging technologies and
-                    delivering robust solutions in collaborative environments.
+                    I'm a passionate software developer specializing in building dynamic and user-centric web applications using cutting-edge technologies like React, Node.js, and MongoDB. My journey in tech started with an intrinsic curiosity for problem-solving, and I've continuously honed my skills in both frontend and backend development to craft seamless user experiences with robust, scalable architectures.
+                </p>
+                <p className="intro-p">
+                    As a collaborative team player, I focus on delivering scalable and impactful solutions while learning and adopting new technologies. With a solid foundation in full-stack development, I bridge the gap between elegant frontend designs and optimized backend performance, ensuring that both aspects work in harmony to deliver top-notch digital experiences.
                 </p>
             </section>
-            {/* right section */}
+            {/* Right Section */}
             <section className="right-sec">
                 <embed
                     src="/cv.pdf"
@@ -36,6 +36,6 @@ const Resume = () => {
             </section>
         </div>
     );
-}
+};
 
 export default Resume;

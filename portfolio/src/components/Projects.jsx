@@ -10,8 +10,6 @@ const Projects = () => {
         <Card websiteLink={"https://mz-task-management.netlify.app/"} imageSrc={taskManagementImg} title={"Task 2"} />,
         <Card websiteLink={"https://mz-task-management.netlify.app/"} imageSrc={taskManagementImg} title={"Task 3"}/>,
         <Card websiteLink={"https://mz-task-management.netlify.app/"} imageSrc={taskManagementImg} title={"Task 4"}/>,
-        <Card websiteLink={"https://mz-task-management.netlify.app/"} imageSrc={taskManagementImg} title={"Task 5"}/>,
-        <Card websiteLink={"https://mz-task-management.netlify.app/"} imageSrc={taskManagementImg} title={"Task 6"}/>
     ]; 
 
     return (
