@@ -12,8 +12,12 @@ const Footer = () => {
             </div>
 
             <div className="right-logo">
-                <img src={gitLogo} alt="Git-Logo"/>
-                <img src={linkedinLogo} alt="Linkedin-Logo"></img>
+                <a href="https://github.com/mstfazmni" target="_blank" rel="noopener noreferrer">
+                    <img src={gitLogo} alt="Git-Logo"/>
+                </a>
+                <a href="https://www.linkedin.com/in/mo-zamani" target="_blank" rel="noopener noreferrer">
+                    <img src={linkedinLogo} alt="Linkedin-Logo"/>
+                </a>
             </div>
         </div>
     )
