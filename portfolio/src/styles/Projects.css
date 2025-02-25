@@ -1,6 +1,6 @@
-.projects-cards-container{
+/* .projects-cards-container{
     height: 100vh;
-}
+} */
 .p-project{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 36px;
@@ -38,6 +38,15 @@
 .card-image:hover {
     transform: scale(1.01);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+.webLink{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d1d1d1;
+    color: rgb(30, 30, 30);
+    text-decoration: none;
 }
 
 
