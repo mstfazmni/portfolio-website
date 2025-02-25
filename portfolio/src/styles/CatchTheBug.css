@@ -63,3 +63,9 @@ button {
 button:hover {
     background-color: #0056b3; 
 }
+
+@media (max-width: 768px) {
+    .game-container {
+        height:50vh;
+    }
+}
