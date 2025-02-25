@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import '../styles/Projects.css';
 import Card from '../components/Card';
-import taskManagementImg from "../asset/task-management.jpg";
 import examplePic1 from "../asset/1.png";
 import examplePic2 from "../asset/2.png";
 import examplePic3 from "../asset/3.png";
-
+import examplePic4 from "../asset/4.png";
 
 const Projects = () => {
     const cards = [
-        <Card websiteLink={"https://mz-task-management.netlify.app/"} imageSrc={taskManagementImg} title={"Task Management"} />,
+        <Card websiteLink={"#"} imageSrc={examplePic4} title={"Task 1"} />,
         <Card websiteLink={"#"} imageSrc={examplePic1} title={"Task 2"} />,
         <Card websiteLink={"#"} imageSrc={examplePic2} title={"Task 3"}/>,
         <Card websiteLink={"#"} imageSrc={examplePic3} title={"Task 4"}/>,

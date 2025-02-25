@@ -1,13 +1,6 @@
-/* Container holding the cards */
-/* .projects-cards-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: rgba(250, 250, 250, 0.9);  
-} */
-
+.projects-cards-container{
+    height: 100vh;
+}
 .p-project{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 36px;
@@ -32,7 +25,6 @@
 
 /* Styling for each card */
 .card-image {
-    
     background-color: #bdcdec;
     width: 100%; 
     height: 500px; 
@@ -48,40 +40,49 @@
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* responsive: Stack in one column on smaller screens */
-@media (max-width: 900px) {
-    .cards-wrapper {
-        grid-template-columns: 1fr;
-    }
-}
-.card{
-    position: relative;
-}
-.webLink {
-    position: absolute; 
-    top: 30%; 
-    left: 20%;
-    transform: translate(-50%, -50%); 
-    z-index: 10; 
-    color: white;
-    text-decoration: none;
-    font-style: italic;
-    background-color: rgba(0, 67, 129, 0.644);
-    padding: 15px 15px;
-    border-radius: 60px;
-    transition: background-color 0.3s;
-}
-.webLink:hover {
-text-decoration: underline;}
 
 /* Responsive design for smaller screens */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
+    .p-project{
+        text-align: center;
+        font-size: 20px;
+        margin: 10px 0px; 
+    }
     .cards-wrapper {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two equal-sized columns */
+        gap: 5px; 
+        /* width: 100vw;  */
+        /* max-width: 250px; */
+        /* height: 250px; */
+        padding: 0px;
     }
 
-    .card {
-        width: 80%;
+    /* .card {  
         margin-bottom: 20px;
+    } */
+    .card-image {
+        background-color: #bdcdec;
+        width: 100%; 
+        height: 200px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border-radius: 10px; */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
     }
-} */
+    .card-image:hover {
+        transform: scale(1.01);
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .webLink{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #d1d1d1;
+        color: rgb(30, 30, 30);
+        text-decoration: none;
+    }
+}
