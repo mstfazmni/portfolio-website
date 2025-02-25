@@ -49,6 +49,7 @@ const About = () => {
         controls.enableRotate = false;  // Disable default rotate control
         controls.target.set(0, 0, 0);
         controls.maxPolarAngle = Math.PI / 2;
+        controls.enableZoom = false;  // Disable zoom functionality
 
         const animate = () => {
             requestAnimationFrame(animate);
